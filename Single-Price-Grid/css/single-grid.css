@@ -1,0 +1,203 @@
+:root {
+  --blue: hsl(179, 62%, 43%);
+  --blue-bright: hsl(179, 56%, 48%);
+  --yellow: hsl(71, 73%, 54%);
+  --grey-blue: hsl(218, 22%, 67%);
+  --grey: hsl(204, 43%, 93%);
+  --white: hsl(0, 0%, 100%);
+  --ff: 'Karla', sans-serif;
+  --fw-s: 400;
+  --fw-b: 700; 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  background-color: var(--grey);
+}
+
+/* Card Styling */
+
+.container {
+  height: 100vh;
+  display: grid
+}
+
+/* Grid Styling */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.grid-col-spann-2 {
+  grid-column: span 2;
+}
+
+/* Background-Color and Radius Styling */
+
+.card-up {
+  background-color: var(--white);
+  height: 240px;
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+
+.card-left {
+  background-color: var(--blue);
+  height: 290px;
+  border-bottom-left-radius: 0.7rem;
+}
+
+.card-right {
+  background-color: var(--blue-bright);
+  height: 290px;
+  border-bottom-right-radius: 0.7rem;
+}
+
+/* Styling Color and Font of the Text */
+
+.top-card-text > h2 {
+  color: var(--blue);
+}
+
+#yellow-color-paragraph {
+  color: var(--yellow);
+  margin-top: 1.4rem;
+  font-size: 1.31rem;
+  font-weight: var(--fw-b);
+}
+
+#grey-color-paragraph {
+  color: var(--grey-blue);
+  line-height: 2rem;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.white-paragraph {
+  color: var(--white);
+  font-weight: var(--fw-b);
+  font-size: 1.2rem;
+}
+
+.darker-white {
+  color: var(--grey);
+}
+
+.button {
+  background-color: var(--yellow);
+  border: none;
+  margin-top: 30px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+}
+
+.grid-container {
+  font-family: var(--ff);
+}
+
+/* Margin and Padding of the text inside the containers */
+
+.padding-of-text {
+  padding: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.dollar-price {
+  font-size: 1.9rem;
+  margin-right: 11px;
+}
+
+.cost-per-month {
+  margin-top: 8px;
+}
+
+.Full-access {
+  font-size: 1.2rem;
+}
+
+.right-card-paragrph {
+  margin-top: 16px;
+  line-height: 1.5rem;
+  width: 208px;
+}
+
+/* Media */
+
+@media (max-width: 846px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .card-right {
+    width: 338px;
+    border-bottom-left-radius: 0.7rem;
+  }
+  .card-left {
+    border-bottom-left-radius: 0;
+  }
+  .card-up {
+    height: 290px;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  #yellow-color-paragraph {
+    font-size: 1rem;
+  }
+  #grey-color-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.5rem
+  }
+
+}
+
+@media (max-width: 360px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .card-right {
+    width: 238px;
+    border-bottom-left-radius: 0.7rem;
+  }
+  .card-left {
+    border-bottom-left-radius: 0;
+  }
+  .card-up {
+    height: 290px;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  #yellow-color-paragraph {
+    font-size: 1rem;
+  }
+  #grey-color-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.5rem
+  }
+
+}
